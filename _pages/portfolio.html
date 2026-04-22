@@ -7,8 +7,158 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+  img {
+    border-right: 2px solid grey !important;
+    border-bottom: 2px solid grey !important;
+    border-radius: 4px;
+    border-top: 1px solid lightgrey !important;
+    border-left: 1px solid lightgrey !important;
+    max-width: 800px;
+    max-height: 1200px;
+  }
+  .heading {
+    border-bottom: 1px solid #11999e;
+    
+    border-radius: 10px;
+    text-align: center;
+    text-justify: start;
+    justify-self: center;
+    padding-left: .5em;
+    padding-right: .5em;
+    max-width: 800px;
+  }
+
+  #markdown-toc {
+
+    a:hover {
+      background-color: var(--global-bg-color);
+      padding-left: 0.5em;
+    }
+  }
+</style>
+<body>
+  <div class="heading">
+    <h3> Here you'll find elements of professional and personal projects which I am able to share publically. This includes CAD modelling and 3D printed designs - functional and aesthetic - as well as analysis scripts and apps. 
+    </h3>
+  
+  </div>
+
+
+<aside class="sidebar__right" style="position: -webkit-sticky; position: sticky; top: 100px; margin-top: 2em;">
+  <nav class="toc" style="background-color: color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%);">
+    <header>
+      <h4 class="nav__title" style="border-bottom: 1px solid lightgrey; margin-bottom: 0.2em;">
+        <i class="fa fa-file-text"></i> On This Page</h4></header>
+    <ul class="toc__menu" id="markdown-toc">
+      
+    </ul>
+  </nav>
+</aside>
+<!--  <div>
+    <a href="/portfolio_AM.html/"> 3D printing + Modelling </a>
+  </div>
+  <div>
+    <a href="/portfolio_Code.html/>Coding, Characterization Analysis</a>
+  </div>-->
+</body>
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
 
+<script>
+//Script to inject id = header's text content, to allow for toc functionality, creates list elements, then orders the toc based on order of appearance in document
+    // Run after DOM is ready (safe whether script is in <head> or end of <body>)
+  (function ready(fn) {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fn);
+    else fn();
+  })(function () {
+    const archive = document.querySelector(".archive");
+    if (!archive) return;
+
+    // condenses header content
+    function makeIdFromText(txt) {
+      return txt
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, "")          // remove whitespace
+        .replace(/[^a-z0-9_-]/g, ""); // remove non-id-friendly chars
+    }
+
+    // Create ids on all h2s inside .archive (in document order)
+    const h2s = archive.querySelectorAll("h2"); 
+    const used = new Set();
+    const headers = [];
+
+    h2s.forEach((h2) => {
+      const title = (h2.textContent || "").trim();
+      const base = makeIdFromText(title);
+      let id = base || "h2";
+
+      let n = 2;
+      while (used.has(id) || document.getElementById(id)) {
+        id = `${base || "h2"}${n++}`;
+      }
+
+      h2.id = id;
+      used.add(id);
+      headers.push({ id, title });
+    });
+
+    // 2) Reorder the TOC <li> items to match the h2 order
+    const toc = document.querySelector('ul.toc__menu#markdown-toc');
+    if (!toc) return;
+
+    const norm = (s) => (s || "").trim().replace(/\s+/g, " ").toLowerCase();
+
+    // Index existing <li> by href target and by link text
+    const byHref = new Map();
+    const byText = new Map();
+    const allLis = Array.from(toc.querySelectorAll(":scope > li"));
+
+    allLis.forEach((li) => {
+      const a = li.querySelector("a");
+      if (!a) return;
+      const href = a.getAttribute("href") || "";
+      const target = href.startsWith("#") ? href.slice(1) : "";
+      if (target) byHref.set(target, li);
+      byText.set(norm(a.textContent), li);
+    });
+
+    const usedLis = new Set();
+    const frag = document.createDocumentFragment();
+
+    headers.forEach(({ id, title }) => {
+      let li = byHref.get(id) || byText.get(norm(title));
+
+      if (!li) {
+        // If a matching <li> doesn't exist, create it
+        li = document.createElement("li");
+        const a = document.createElement("a");
+        a.textContent = title;
+        a.href = `#${id}`;
+        li.appendChild(a);
+      } else {
+        // Ensure the matching li points to the (possibly newly created) id
+        const a = li.querySelector("a");
+        if (a) {
+          a.href = `#${id}`;
+          // Optional: keep TOC text synced to the header text
+          a.textContent = title;
+        }
+      }
+
+      usedLis.add(li);
+      frag.appendChild(li); // appending moves existing nodes into the new order
+    });
+
+    // Append any extra TOC <li> that didn't match a header (optional)
+    allLis.forEach((li) => {
+      if (!usedLis.has(li)) frag.appendChild(li);
+    });
+
+    toc.innerHTML = "";
+    toc.appendChild(frag);
+  });
+</script>
