@@ -61,14 +61,16 @@ author_profile: true
   <div>
     <a href="/portfolio_Code.html/>Coding, Characterization Analysis</a>
   </div>-->
+
+<script src="https://imrirfrenkel.github.io/assets/js/portfolio.js"></script>
 </body>
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
 {% endfor %}
 
-<script src="https://imrirfrenkel.github.io/assests/js/portfolio.js">
-/*//Script to inject id = header's text content, to allow for toc functionality, creates list elements, then orders the toc based on order of appearance in document
+<script>
+//Script to inject id = header's text content, to allow for toc functionality, creates list elements, then orders the toc based on order of appearance in document
     // Run after DOM is ready
   (function ready(fn) {
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", fn);
@@ -160,5 +162,5 @@ author_profile: true
 
     toc.innerHTML = "";
     toc.appendChild(frag);
-  });*/
+  });
 </script>
