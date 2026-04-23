@@ -19,6 +19,7 @@ author_profile: true
   blockquote {
     margin-top: 0px;
   }
+
 </style>
 <script>import {MarkdownBlock, MarkdownSpan, MarkdownElement} from "https://md-block.verou.me/md-block.js";</script>
 <article style="padding: 0; margin-left: 3em; margin-right: 3em;"> 
