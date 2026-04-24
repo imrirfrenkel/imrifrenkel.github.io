@@ -36,6 +36,64 @@ author_profile: true
       padding-left: 0.5em;
     }
   }
+
+  .sidebar__right {
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 100px; 
+    margin-top: 2em;
+
+    .toc {
+      background-color: color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%);
+    }
+  }
+
+  @media (max-width: 925px) {
+    .sidebar__right {
+      top: 65px;
+
+      .toc {
+        --lis  : 9;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: linear-gradient(
+          color-mix(var(--global-bg-color), transparent 0%) 50%,
+          color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%) 100%);
+        padding: 8px;
+        max-width: 700px;
+        > ul {
+          font-size: 16px;
+          max-height: calc(var(--lis) * 1em);
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .sidebar__right {
+        top: 58px;
+      }
+
+      @media (max-width: 536px) {
+        .sidebar__right {
+          top: 56px;
+          .toc .toc__menu {
+              --lis  : 7;
+              overflow: hidden;
+              font-size: 14px;
+              a {
+                padding: 2px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
 </style>
 <body>
   <div class="heading">
@@ -45,8 +103,8 @@ author_profile: true
   </div>
 
 
-<aside class="sidebar__right" style="position: -webkit-sticky; position: sticky; top: 100px; margin-top: 2em;">
-  <nav class="toc" style="background-color: color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%);">
+<aside class="sidebar__right">
+  <nav class="toc">
     <header>
       <h4 class="nav__title" style="border-bottom: 1px solid lightgrey; margin-bottom: 0.2em;">
         <i class="fa fa-file-text"></i> On This Page</h4></header>
