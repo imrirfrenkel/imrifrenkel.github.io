@@ -384,7 +384,7 @@ Awards
 * Men's Rugby National Championship Qualifier, NCAA DI-AA (2016, 2017)
 
 
-<script>
+<script src=https://imrirfrenkel.github.io/assets/js/cv.js>
 /* Script to read teaching links generated and pull from corresponding files to generate at description teaser on hover */
 
 document.addEventListener("DOMContentLoaded", () => {
