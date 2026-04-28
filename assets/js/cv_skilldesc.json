@@ -1,0 +1,375 @@
+{
+  "metadata": {
+    "description": "Introductory summaries for the supplied comma-separated technical terms. Wikipedia-style summaries are paraphrased rather than copied verbatim. Ambiguous or non-exact entries are marked as related-entry or AI-summary fallback.",
+    "fields": {
+      "term": "Original or normalized input term",
+      "resolved_entry": "Likely Wikipedia entry or closest standard technical term",
+      "source_type": "wikipedia_intro, wikipedia_related_entry, or ai_summary_fallback",
+      "introductory_paragraph": "Concise introductory description"
+    }
+  },
+  "terms": [
+    {
+      "term": "SEM",
+      "resolved_entry": "Scanning electron microscope",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "A scanning electron microscope is a type of electron microscope that forms images by scanning a focused electron beam across a sample surface. Interactions between the electrons and atoms in the sample generate signals that provide information about surface topography, morphology, and composition."
+    },
+    {
+      "term": "AFM",
+      "resolved_entry": "Atomic force microscopy",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Atomic force microscopy is a high-resolution form of scanning probe microscopy that maps a surface by measuring forces between a sharp probe tip and the sample. It can resolve surface features at nanometer or sub-nanometer scale and is widely used for topography, roughness, and mechanical-property measurements."
+    },
+    {
+      "term": "NMR",
+      "resolved_entry": "Nuclear magnetic resonance",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Nuclear magnetic resonance is a physical phenomenon in which certain atomic nuclei in a magnetic field absorb and re-emit electromagnetic radiation at characteristic frequencies. NMR spectroscopy uses this response to analyze molecular structure, chemical environments, dynamics, and composition."
+    },
+    {
+      "term": "FTIR",
+      "resolved_entry": "Fourier-transform infrared spectroscopy",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Fourier-transform infrared spectroscopy is an infrared spectroscopy technique that measures how a sample absorbs infrared light across a range of wavelengths. The resulting spectrum is used to identify chemical bonds, functional groups, and molecular composition."
+    },
+    {
+      "term": "EDS",
+      "resolved_entry": "Energy-dispersive X-ray spectroscopy",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Energy-dispersive X-ray spectroscopy is an analytical technique used for elemental analysis and chemical characterization of a sample. It detects characteristic X-rays emitted when a material is excited, commonly by an electron beam in SEM or TEM systems."
+    },
+    {
+      "term": "XPS",
+      "resolved_entry": "X-ray photoelectron spectroscopy",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "X-ray photoelectron spectroscopy is a surface-sensitive technique that measures the kinetic energy of electrons emitted from a material after irradiation with X-rays. It is used to determine elemental composition, chemical states, and surface chemistry within the upper few nanometers of a sample."
+    },
+    {
+      "term": "XRD",
+      "resolved_entry": "X-ray crystallography / X-ray diffraction",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "X-ray diffraction is a technique used to study the atomic and molecular structure of crystalline materials. By measuring how X-rays scatter from ordered planes in a sample, XRD can identify crystalline phases, lattice spacing, crystallite size, and texture."
+    },
+    {
+      "term": "DMA",
+      "resolved_entry": "Dynamic mechanical analysis",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Dynamic mechanical analysis is a materials characterization technique that measures the mechanical response of a material under oscillatory stress or strain. It is commonly used to determine storage modulus, loss modulus, damping behavior, and glass-transition behavior in polymers and composites."
+    },
+    {
+      "term": "DSC",
+      "resolved_entry": "Differential scanning calorimetry",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Differential scanning calorimetry is a thermal analysis technique that measures heat flow into or out of a sample as its temperature is changed. It is used to study melting, crystallization, glass transitions, curing reactions, and other thermal events."
+    },
+    {
+      "term": "Rheology",
+      "resolved_entry": "Rheology",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Rheology is the study of the flow and deformation of matter, especially materials that behave neither as ideal solids nor ideal liquids. It is widely used to characterize viscosity, viscoelasticity, yield stress, shear-thinning, and time-dependent flow behavior."
+    },
+    {
+      "term": "Profilometry",
+      "resolved_entry": "Profilometer",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Profilometry is the measurement of a surface profile to quantify surface roughness, step height, waviness, or topographic features. It may be performed by contact stylus methods or by optical, non-contact techniques."
+    },
+    {
+      "term": "Interferometry",
+      "resolved_entry": "Interferometry",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Interferometry is a measurement technique that uses the interference of waves, often light, to extract information about distance, surface shape, refractive index, displacement, or other physical properties. Optical interferometry is widely used for precision metrology and surface profiling."
+    },
+    {
+      "term": "Laser Confocal Microscopy",
+      "resolved_entry": "Confocal microscopy",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Laser confocal microscopy is an optical imaging technique that uses focused laser illumination and spatial filtering to reject out-of-focus light. It enables high-contrast imaging, optical sectioning, and three-dimensional reconstruction of surfaces or biological samples."
+    },
+    {
+      "term": "Mercury Intrusion Porosimeter",
+      "resolved_entry": "Mercury intrusion porosimetry",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Mercury intrusion porosimetry is a technique for measuring pore size distribution, porosity, and pore volume by forcing mercury into a porous material under controlled pressure. The pressure required to intrude mercury is related to pore diameter through capillary principles."
+    },
+    {
+      "term": "GC-MS",
+      "resolved_entry": "Gas chromatography–mass spectrometry",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Gas chromatography–mass spectrometry is an analytical method that combines gas chromatographic separation with mass spectrometric detection. It is used to identify and quantify volatile or semi-volatile compounds in complex mixtures."
+    },
+    {
+      "term": "GPC",
+      "resolved_entry": "Gel permeation chromatography",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Gel permeation chromatography is a type of size-exclusion chromatography used to separate molecules by hydrodynamic volume. It is commonly used to determine polymer molecular weight distribution, number-average molecular weight, weight-average molecular weight, and dispersity."
+    },
+    {
+      "term": "Ellipsometry",
+      "resolved_entry": "Ellipsometry",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Ellipsometry is an optical technique that measures changes in the polarization of light reflected or transmitted by a material. It is commonly used to determine thin-film thickness, refractive index, extinction coefficient, and multilayer optical properties."
+    },
+    {
+      "term": "QCM",
+      "resolved_entry": "Quartz crystal microbalance",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "A quartz crystal microbalance is a highly sensitive mass sensor that measures changes in the resonant frequency of a quartz crystal. It is used to monitor thin-film deposition, adsorption, binding events, and surface mass changes in gas or liquid environments."
+    },
+    {
+      "term": "Electrochemical Impedance Spectroscopy",
+      "resolved_entry": "Electrochemical impedance spectroscopy",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Electrochemical impedance spectroscopy is a technique that measures the response of an electrochemical system to a small alternating voltage or current over a range of frequencies. It is used to study charge transfer, diffusion, coatings, corrosion, batteries, fuel cells, and interfacial processes."
+    },
+    {
+      "term": "TGA",
+      "resolved_entry": "Thermogravimetric analysis",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Thermogravimetric analysis is a thermal analysis method that measures the mass of a sample as temperature or time changes under a controlled atmosphere. It is used to evaluate decomposition, oxidation, moisture content, filler content, and thermal stability."
+    },
+    {
+      "term": "Wet Contact Angle",
+      "resolved_entry": "Contact angle",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "A contact angle is the angle formed where a liquid-vapor interface meets a solid surface. It is used to quantify wettability, with lower water contact angles generally indicating more hydrophilic surfaces and higher angles indicating more hydrophobic surfaces."
+    },
+    {
+      "term": "Adhesion (peel, pull-off, shear)",
+      "resolved_entry": "Adhesion / Adhesion testing",
+      "source_type": "ai_summary_fallback",
+      "introductory_paragraph": "Adhesion is the tendency of dissimilar surfaces or materials to cling to one another through mechanical, chemical, electrostatic, or intermolecular interactions. Peel, pull-off, and shear tests are common methods for quantifying adhesive strength under different loading geometries."
+    },
+    {
+    "term": "Additive Manufacturing",
+    "resolved_entry": "Additive manufacturing",
+    "source_type": "wikipedia_intro",
+    "introductory_paragraph": "Additive manufacturing is a manufacturing approach in which parts are created by adding material layer by layer from digital model data. It includes a range of processes used to make prototypes, tooling, and end-use components from polymers, metals, ceramics, composites, and other materials."
+    },
+    {
+      "term": "FDM",
+      "resolved_entry": "Fused deposition modeling",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Fused deposition modeling is an additive manufacturing process in which a thermoplastic filament is heated, extruded through a nozzle, and deposited layer by layer to form a three-dimensional object. It is one of the most common material-extrusion 3D printing methods."
+    },
+    {
+      "term": "DLP",
+      "resolved_entry": "Digital light processing / Vat photopolymerization",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Digital light processing is a projection-based photopolymerization technique in which patterned light cures a liquid photosensitive resin layer by layer. In additive manufacturing, DLP is used to make high-resolution polymer parts by selectively solidifying photopolymer resin."
+    },
+    {
+      "term": "SLA",
+      "resolved_entry": "Stereolithography",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Stereolithography is an additive manufacturing process that uses light, typically a laser, to selectively cure liquid photopolymer resin into solid layers. It is known for producing parts with fine detail, smooth surfaces, and relatively high dimensional accuracy."
+    },
+    {
+      "term": "Ink Jet",
+      "resolved_entry": "Material jetting / Inkjet printing",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Inkjet-based additive manufacturing deposits droplets of material or binder onto a build surface in controlled patterns. Depending on the process, the jetted material may be a photopolymer, wax, binder, nanoparticle ink, or other printable fluid that is subsequently cured, solidified, or consolidated."
+    },
+    {
+      "term": "Powder Bed",
+      "resolved_entry": "Powder bed fusion / Powder-bed additive manufacturing",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Powder-bed additive manufacturing processes create parts by selectively binding or fusing regions of a powder layer, then spreading additional layers until the object is complete. Powder bed fusion methods use thermal energy such as a laser or electron beam to fuse polymer, metal, or ceramic powders."
+    },
+    {
+      "term": "ALD",
+      "resolved_entry": "Atomic layer deposition",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Atomic layer deposition is a thin-film deposition technique based on sequential, self-limiting surface reactions. It enables highly conformal films with precise thickness control, often at the atomic or nanometer scale."
+    },
+    {
+      "term": "PLD",
+      "resolved_entry": "Pulsed laser deposition",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Pulsed laser deposition is a physical vapor deposition method in which a high-power pulsed laser ablates material from a target, creating a plume that deposits onto a substrate. It is used to grow thin films, especially complex oxides and research-scale coatings."
+    },
+    {
+      "term": "CVD",
+      "resolved_entry": "Chemical vapor deposition",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Chemical vapor deposition is a process in which volatile chemical precursors react or decompose on a substrate to form a solid material. It is widely used to deposit thin films, coatings, semiconductors, ceramics, and carbon-based materials."
+    },
+    {
+      "term": "Ion Milling",
+      "resolved_entry": "Ion milling",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Ion milling is a materials-processing technique that removes material from a surface by bombarding it with energetic ions. It is used for etching, polishing, cross-section preparation, and thinning samples for microscopy or microfabrication."
+    },
+    {
+      "term": "Electrolyte Deposition",
+      "resolved_entry": "Electrodeposition",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Electrodeposition is a material-processing method in which electric current causes material, commonly metal, to deposit onto an electrode from an electrolyte containing dissolved ions. It is widely used for electroplating, protective coatings, functional films, and surface modification."
+    },
+    {
+      "term": "Sublimation Freeze Drying",
+      "resolved_entry": "Freeze drying",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Freeze drying, or lyophilization, is a dehydration process in which water is frozen and then removed by sublimation under reduced pressure. It is used to preserve heat-sensitive materials, porous structures, biological samples, and pharmaceutical formulations."
+    },
+    {
+      "term": "Critical CO2 Drying",
+      "resolved_entry": "Critical point drying",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Critical point drying is a drying method that avoids liquid-vapor surface tension by passing through the critical point of a fluid, commonly carbon dioxide. It is used to dry delicate porous structures, aerogels, biological samples, and microfabricated devices without collapse."
+    },
+    {
+      "term": "Thin Film Coating (Flow, Spin)",
+      "resolved_entry": "Thin film / Spin coating / Flow coating",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Thin-film coating refers to processes that deposit a very thin layer of material onto a substrate. Spin coating spreads liquid by centrifugal force on a rotating substrate, while flow coating uses a controlled flowing liquid film to coat a surface."
+    },
+    {
+      "term": "CNC",
+      "resolved_entry": "Numerical control / CNC machining",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Computer numerical control is the automated control of machining tools by a computer executing programmed instructions. CNC machining is used to cut, mill, drill, turn, or shape materials with high precision and repeatability."
+    },
+    {
+      "term": "Laser Cutting",
+      "resolved_entry": "Laser cutting",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Laser cutting is a manufacturing process that uses a focused laser beam to cut materials. It is commonly used for sheet metal, polymers, wood, textiles, and other materials where precise, localized thermal cutting is useful."
+    },
+    {
+      "term": "UVO Plasma Etching",
+      "resolved_entry": "UV-ozone cleaning / Plasma etching",
+      "source_type": "ai_summary_fallback",
+      "introductory_paragraph": "UVO and plasma etching are surface-treatment methods used to clean, activate, oxidize, or remove material from surfaces. UV-ozone treatment uses ultraviolet light and ozone to oxidize contaminants, while plasma etching uses reactive or energetic plasma species to modify or remove surface material."
+    },
+    {
+      "term": "e-Beam Lithography",
+      "resolved_entry": "Electron-beam lithography",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Electron-beam lithography is a nanofabrication technique that writes patterns directly into an electron-sensitive resist using a focused electron beam. It is capable of very high-resolution patterning but is generally slower than mask-based photolithography."
+    },
+    {
+      "term": "Polymerization: radical (UV, Thermal, RAFT)",
+      "resolved_entry": "Radical polymerization / Reversible addition-fragmentation chain-transfer polymerization",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Radical polymerization is a chain-growth polymerization mechanism in which reactive radical species initiate and propagate polymer chains. It can be initiated thermally or photochemically, and controlled variants such as RAFT polymerization use chain-transfer agents to regulate molecular weight and architecture."
+    },
+    {
+      "term": "Ionic",
+      "resolved_entry": "Ionic polymerization",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "Ionic polymerization is a chain-growth polymerization mechanism in which the active chain end carries an ionic charge. It includes cationic and anionic polymerization and is used to produce polymers with controlled structures when impurities and reaction conditions are carefully managed."
+    },
+    {
+      "term": "Condensate/Precipitation",
+      "resolved_entry": "Condensation polymerization / Precipitation polymerization",
+      "source_type": "ai_summary_fallback",
+      "introductory_paragraph": "Condensation polymerization forms polymers through stepwise reactions between functional groups, often releasing small molecules such as water or alcohol. Precipitation polymerization describes a process in which polymer forms in solution but becomes insoluble and precipitates as particles or solids."
+    },
+    {
+      "term": "Step-growth",
+      "resolved_entry": "Step-growth polymerization",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "Step-growth polymerization is a polymerization mechanism in which monomers, oligomers, and polymer chains react with one another through functional-group reactions. High molecular weight is typically reached only at high conversion and balanced stoichiometry."
+    },
+    {
+      "term": "Sol-gel",
+      "resolved_entry": "Sol–gel process",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "The sol-gel process is a wet-chemical method for producing solid materials from small molecules or colloidal particles. It involves conversion of a liquid sol into a gel network and is widely used to make ceramics, glasses, coatings, and porous materials."
+    },
+    {
+    "term": "CMC",
+    "resolved_entry": "Ceramic matrix composite",
+    "source_type": "wikipedia_related_entry",
+    "introductory_paragraph": "A ceramic matrix composite is a composite material consisting of ceramic fibers or particles embedded in a ceramic matrix. CMCs are designed to retain the high-temperature stability of ceramics while improving fracture toughness, thermal-shock resistance, and damage tolerance compared with monolithic ceramics."
+    },
+    {
+      "term": "Schlink Line",
+      "resolved_entry": "Schlenk line",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "A Schlenk line is a dual-manifold laboratory apparatus used to handle air- and moisture-sensitive compounds under inert gas or vacuum. One manifold supplies purified inert gas, while the other connects to a vacuum pump, allowing glassware and reactions to be evacuated, purged, or maintained under inert atmosphere."
+    },
+    {
+      "term": "Glovebox",
+      "resolved_entry": "Glovebox",
+      "source_type": "wikipedia_intro",
+      "introductory_paragraph": "A glovebox is a sealed container that allows users to manipulate objects in a controlled atmosphere through built-in gloves. Laboratory gloveboxes are commonly used to handle air-sensitive, moisture-sensitive, hazardous, or contamination-sensitive materials."
+    },
+    {
+      "term": "Cleanroom (Class 10; ISO4)",
+      "resolved_entry": "Cleanroom",
+      "source_type": "wikipedia_related_entry",
+      "introductory_paragraph": "A cleanroom is a controlled environment in which airborne particles, contamination, temperature, humidity, and airflow are regulated. Class 10 under older federal standards is approximately comparable to ISO Class 4, indicating a very low permitted particle concentration for high-cleanliness manufacturing or research environments."
+    },
+    {
+      "term": "Chemistry of 3D Printing and Additive Manufacturing",
+      "introductory_paragraph": "Examination of various styles of 3D printing in plastic and metal space. Examination of material and design constraints of each technology. Exploration of end-use applications for each technology. Culminates in design project in which students select product for re-design to take advantage of additive manufacturing. Students use basic computer-aided design skills to modify existing product, select print technology and material to generate that object, and then produce report looking at cost-benefit analysis of using 3D printing in chosen application."
+    },
+    {
+      "term": "Materials in Additive Manufacturing",
+      "introductory_paragraph": "Additive manufacturing, also known as 3D printing, has rapidly become popular and disruptive technology for industry 4.0 revolution. Discussion of materials science topics encountered in additive manufacturing, including metals and alloys, polymers, composites, ceramics, and dissimilar materials. Special emphasis given to structure-property relationship of various 3D printed materials, and their structural origins and potential applications."
+    },
+    {
+      "term": "Civil Engineering Materials",
+      "introductory_paragraph": "Discussion of aspects of cement and concrete materials, including manufacture of cement and production of concrete. Aspects of cement composition and basic chemical reactions, microstructure, properties of plastic and hardened concrete, chemical admixtures, and quality control and acceptance testing. Development and testing of fundamentals for complete understanding of overall response of all civil engineering materials. By end of term, successful utilization of fundamental materials science concepts to understand, explain, analyze, and describe engineering performance of civil engineering materials"
+    },
+    {
+      "term": "Dislocations & Strengthening Mechanisms in Solids",
+      "introductory_paragraph": "Elastic and plastic behavior of crystals, geometry, mechanics, and interaction of dislocations, mechanisms of yielding, work hardening, and other strengthening"
+    },
+    {
+      "term": "Structure and Properties of Glass",
+      "introductory_paragraph": "Structure of amorphous solids and glasses. Conditions of glass formation and theories of glass structure. Mechanical, electrical, and optical properties of glass and relationship to structure."
+    },
+    {
+      "term": "Organometallic Chemistry: Main Group Metals",
+      "introductory_paragraph": "The chemistry of compounds containing main group metal-carbon bonds. A survey of major classes of organometallic compounds, their bonding, and their reaction chemistry. The role of main group organometallic compounds in organic synthesis and polymer chemistry."
+    },
+    {
+      "term": "Deposition Technologies & Their Applications",
+      "introductory_paragraph": "Examination of physics behind majority of modern thin film deposition technologies based on vapor phase transport. Basic vacuum technology and gas kinetics. Deposition methods used in high-technology applications. Theory and experimental details of physical vapor deposition (PVD), chemical vapor deposition (CVD), plasma-enhanced chemical vapor deposition processes."
+    },
+    {
+      "term": "Nanoscale Materials",
+      "introductory_paragraph": "Study of up-to-date subjects in novel materials and their potential applications, including nanoscale materials and biomaterials."
+    },
+    {
+      "term": "Materials and Physics of Solar Cells",
+      "introductory_paragraph": "Comprehensive introduction to materials and physics of photovoltaic cell, covering basic physics of semiconductors in photovoltaic devices, physical models of cell operation, characteristics and design of common types of solar cells, and approaches to increasing solar cell efficiency. Recent progress in solar cells, such as organic solar cell, thin-film solar cells, and multiple junction solar cells provided to increase student knowledge."
+    },
+    {
+      "term": "Bioinspired Materials",
+      "introductory_paragraph": "Most recent advances in bioinspired materials and biomaterials, covering natural materials, biomimicry, and bioinspired artificial materials, with emphasis on synthesis, processing, hierarchical design, and assembly from nano- to macro-scale, properties and characterizations, and real-life applications."
+    },
+    {
+      "term": "Introduction to Biomaterials",
+      "introductory_paragraph": "Engineering materials used in medicine and dentistry for repair and/or restoration of damaged natural tissues. Topics include relationships between material properties, suitability to task, surface chemistry, processing and treatment methods, and biocompatibility."
+    },
+    {
+      "term": "Process Control",
+      "introductory_paragraph": "Linear control theory is presented in which processes are described mathematically through transfer functions and flow diagrams. Laplace transforms are used on state space models to allow for description of control systems in algebraic ways. On/off controllers are introduced, and conventional three-mode (PID) controllers are specified. Other topics include feedback, feed-forward, closed-loop, and open-loop systems, damping and stability, plus low-order, higher-order, and nonlinear systems."
+    },
+    {
+      "term": "Process Design",
+      "introductory_paragraph": "Industrial design and supporting economics are presented in the context of a representative design project. Extension of the student's early background in unit operations through practical design considerations including materials of construction is accomplished. Methods are presented for capital and operating cost estimation, raw materials and utilities pricing, and assembly of investment costs, taxes, environmental and other site requirements. Realistic design constraints are included; e.g., economic factors, safety, reliability aesthetics, ethics, and social impact."
+    },
+    {
+      "term": "Unit Operations",
+      "introductory_paragraph": "Hands-on building and operating industrial unit operations (e.g. heat exchangers, flow controllers, packed bed reactor, variable diameter parallel piping, desalination, continous distillation fractioning)"
+    },
+    {
+      "term": "Philosophy of Neuroscience",
+      "introductory_paragraph": "This course is a philosophical analysis of neuroscience, including its methods and theories. How does neuroscience attempt to explain human experience and behavior? Can neuroscience explain conscious experience? Will psychological concepts such as the 'self' be explained at the neuroscientific level, or must they be eliminated in favor of neuroscientific categories? Can human behavior be explained thoroughly by brain data? Other topics can include the relationship between neuroscience and ethics, the use of neuroscience in explaining mental disorder, and the application of neuroscience data to social categories such as 'art' and 'race'."
+    },
+    {
+      "term": "Philosophy of Perception",
+      "introductory_paragraph": "A systematic philosophical and interdisciplinary examination of major theories of perception."
+    },
+    {
+      "term": "Technology Ethics",
+      "introductory_paragraph": "Consideration of human problems in technological culture."
+    }
+  ]
+}

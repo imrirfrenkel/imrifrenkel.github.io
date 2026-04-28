@@ -7,7 +7,102 @@ redirect_from:
   - /resume
 ---
 
+
 {% include base_path %}
+
+<style>
+  /*h1 { 
+    background: var(--global-bg-color);
+    width: 100%;
+    border-bottom: 1px solid var(--global-border-color);
+    position: sticky; 
+    top: 65px;
+  }*/
+
+  .archive {
+    padding-right: 200px;
+  }
+  #markdown-toc {
+    a:hover {
+      background-color: var(--global-bg-color);
+      padding-left: 0.5em;
+    }
+  }
+  .sidebar__right {
+    transition: 0.1s;
+    position: fixed;
+    top: 85px;
+    right: 0; 
+    z-index: 999;
+    &.is-stuck {
+      transition: 0.1s;
+      top: 65px;
+    }
+
+    .toc {
+      background-color: color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%);
+    }
+  }
+  @media (max-width: 925px) {
+    .sidebar__right .toc {
+      background-image: linear-gradient(
+        color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 0%) 50%,
+        color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%) 100%);
+    }
+    html[data-theme="dark"] {
+      .sidebar__right .toc {
+        background-image: linear-gradient(
+          color-mix(var(--global-bg-color), transparent 0%) 50%,
+          color-mix(color-mix(var(--global-bg-color), var(--global-base-color)), transparent 50%) 100%);
+      }
+    }
+    .sidebar__right {
+      top: 65px;
+
+      .toc {
+        --lis  : 11;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px;
+        max-width: 700px;
+        > ul {
+          font-size: 16px;
+          max-height: calc(var(--lis) * 1em);
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          > li {
+            
+          }
+        }
+        .toc__submenu {
+        }
+      }
+    }
+  }
+    @media (max-width: 768px) {
+      .sidebar__right {
+        top: 58px;
+      }
+      @media (max-width: 536px) {
+        .sidebar__right {
+          top: 56px;
+          .toc .toc__menu {
+              --lis  : 11;
+              overflow: hidden;
+              font-size: 14px;
+              a {
+                padding: 2px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+</style>
+
 
 Education
 ======
@@ -131,7 +226,50 @@ Skills
   | Adhesion Force Testing (peel, pull-off, shear) |
 -->
 
-<ul><li><table markdown="block">
+<style>
+  /*TO CHANGE TEASER STYLING TO TO CV.JS */
+  /*#term-teaser {
+    position: fixed;
+    display: none;
+    max-width: 420px;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.5rem;
+    background: #f0fffa;
+    color: #222222;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    font-size: 0.9rem;
+    line-height: 1.35;
+    z-index: 999999;
+    pointer-events: none;
+  }*/
+
+  html [data-theme="dark"]
+    #term-teaser {
+      background: #e8fff8;
+    }
+    table td:hover { box-shadow: inset 3px 3px 6px #e9fff8, inset -3px -3px 6px #e9fff8; }
+
+  #term-teaser .teaser-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+  }
+
+  table {
+    td {
+      
+      transition-duration: .6s;
+      transition-timing-function: ease-out;
+    }
+    td:hover {
+      box-shadow: inset 3px 3px 6px #d9fff3, inset -3px -3px 6px #d9fff3;
+    }
+  }
+
+</style>
+
+<ul><li><table id="mse" markdown="block">
   <tbody align="center">
     <tr>
       <th style="background: var(--global-border-color); border-right: 1px solid #e0e0e0; padding-left: 2em;">Material Characterization</th><th style="background: var(--global-border-color); padding-left: 2em;">Synthesis & Processing</th>
@@ -207,7 +345,7 @@ Skills
 </table></li></ul>
 
 <ul><li>
-<table>
+<table id="code">
   <tbody align="center">
     <tr>
       <th style="background: var(--global-border-color); border-right: 1px solid #e0e0e0; padding-left: 2em;"> Software</th><th style="background: var(--global-border-color); border-left: 1px solid #e0e0e0; padding-left: 2em;"> Languages</th></tr>
@@ -247,12 +385,12 @@ Skills
 </table></li></ul>
 
 
-<ul><li><table markdown="block">
+<ul><li><table id="course" markdown="block">
   <tbody align="center">
     <tr>
       <th colspan="3" style="background: var(--global-border-color); padding-left: 2em;">Advanced Coursework</th></tr>
     <tr>
-      <td >Additive Manufacturing/3D Printing</td>
+      <td >Chemistry of 3D Printing and Additive Manufacturing</td>
       <td >Materials in Additive Manufacturing</td>
       <td>Civil Engineering Materials</td></tr>
     <tr>
@@ -274,7 +412,7 @@ Skills
     <tr>
       <td colspan="1">Philosophy of Neuroscience</td>
       <td>Philosophy of Perception</td>
-      <td></td></tr>
+      <td>Technology Ethics</td></tr>
   </tbody>
 </table></li></ul>
 
@@ -347,23 +485,23 @@ Teaching
   
 Leadership
 =====
-* January 2019 –December 2024 // He Group Labs: **Lab Manager, Safety Officer**
+* **Lab Manager, Safety Officer** (January 2019 –December 2024) // He Group Labs: 
   * Led, planned, and managed the execution of a total lab safety & hygiene restructuring, impeding habit recidivism
     * Redesigned daily responsibility to decentralized managerial system to enhance cooperative culture
     * Oversaw lab necessities, equipment orders/installments, and supply requests while improving procedure
   * Presented weekly hygiene reports to highlight current workflow inefficiencies, providing solutions/improvements
 
-* August 2020 – June 2024 // **Teaching Fellow, (Psychiatry) “Applied Positive Neuroscience”**       
+* **Teaching Fellow, (Psychiatry) “Applied Positive Neuroscience”** (August 2020 – June 2024)//        
   * Mentored 60 students on how to conduct, construct, and analyze experiments in mindfulness & mental wellness
   * Built sections weekly around application of lectures on research in neuroscience and The Upward Spiral
 
 
-* May 2019 – June 2020 // **Teaching Fellow, (Neuroscience Cluster) “Mind Over Matter”** 
+* **Teaching Fellow, (Neuroscience Cluster) “Mind Over Matter”** (May 2019 – June 2020) //  
   * Interdisciplinary teacher and mentor to 110-140 students under 5 professors of diverse departmental affiliations
   * Designed all syllabi, lessons, activities, and exams in concordance with enhanced learning and accreditation
   * Individually planned and created weekly three-hour seminar succeeding 6 months of leading 2 two-hour sections 
 
-* November 2015 – May 2018 // Theta Tau - Nu Epsilon Chapter (professional engineering fraternity): **Co-founder, Recruitment Director, Athletics Chair**
+* **Co-founder, Recruitment Director, Athletics Chair** (November 2015 – May 2018) // Theta Tau - Nu Epsilon Chapter (professional engineering fraternity): 
   * Co-colonized the Tulane University chapter of Theta Tau, holding Recruitment Director and Athletics Chair
   * Planned social and athletic events and managed +$1,500/semester budget to advertise and grow the fraternity
 
@@ -385,3 +523,5 @@ Awards
 
 
 <script src="https://imrirfrenkel.github.io/assets/js/cv.js"></script>
+<script src="/../assets/js/cv.js"></script>
+
